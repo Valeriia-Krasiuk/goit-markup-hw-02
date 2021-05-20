@@ -4,6 +4,10 @@
   --secondary-font: Raleway, sans-serif;
   --accent-color: #2196F3;;
   --main-color: #212121;
+  --secondary-color: #FFFFFF;
+  --third-color: #757575;
+  --main-background-color: #2F303A;
+  --secondary-background-color: #F5F4FA;
 }
 
 /* убрать точки со списков */
@@ -39,9 +43,7 @@ body {
 }
 
 .logo-footer {
-  color: #FFFFFF;
-  /*временный фон для белого текста*/
-  background-color: #2F303A;
+  color: var(--secondary-color);
 }
 
 .suptitle {
@@ -51,6 +53,10 @@ body {
   text-align: center;
 
   color: var(--main-color);
+}
+
+address {
+  font-style: normal;
 }
 /* ==== END COMPONENTS ==== */
 
@@ -64,6 +70,15 @@ body {
   color: var(--main-color);
 }
 
+.navigation-menu-main-link{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+}
+
 .navigation-menu-link:hover,
 .navigation-menu-link:focus {
   color: var(--accent-color);
@@ -75,7 +90,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  color: #757575;
+  color: var(--third-color);
 }
 
 .contacts-item-link:hover,
@@ -85,6 +100,10 @@ body {
 /* ==== END HEADER ==== */
 
 /* ==== HERO ==== */
+.hero-section {
+  background-color: var(--main-background-color);
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -93,9 +112,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: #FFFFFF;
-  /*временный фон для белого текста*/
-  background-color: #2F303A;  
+  color: var(--secondary-color);
 }
 
 .modal-btn {
@@ -105,8 +122,8 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
 
-  color: #FFFFFF;
-  background-color: #2196F3;
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
   cursor: pointer;
 }
 
@@ -130,11 +147,15 @@ body {
   font-size: 14px;
   line-height: 1.71;
 
-  color: #757575;
+  color: var(--third-color);
 }
 /* ==== END Our advantages section ==== */
 
 /* ==== Our team section ==== */
+.team-section {
+  background-color: var(--secondary-background-color);
+}
+
 .team-title{
   font-weight: 500;
   font-size: 16px;
@@ -145,19 +166,21 @@ body {
   font-size: 16px;
   line-height: 1.19;
 
-  color: #757575;
+  color: var(--third-color);
 }
 /* ==== END Our team section ==== */
 
 /* ==== FOOTER ==== */
+footer {
+  background-color: var(--main-background-color);
+}
+
 .footer-map-link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 
   color: #FFFFFF;
-  /*временный фон для белого текста*/
-  background-color: #2F303A;
 }
 
 .footer-map-link:hover,
@@ -170,8 +193,6 @@ body {
   line-height: 1.71;
 
   color: rgba(255, 255, 255, 0.6);
-  /*временный фон для белого текста*/
-  background-color: #2F303A;
 }
 
 .footer-contacts-link:hover,
@@ -188,13 +209,13 @@ body {
   line-height: 1.62;
   cursor: pointer;
 
-  background-color: #F5F4FA;
+  background-color: var(--secondary-background-color);
 }
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-  color: #FFFFFF;
-  background-color: #2196F3;
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
 }
 
 .gallery-title {
@@ -203,14 +224,14 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
 
-  color: #212121;
+  color: var(--main-color);
 }
 
 .gallery-description {
   font-size: 16px;
   line-height: 1.87;
 
-  color: #757575;
+  color: var(--third-color);
 }
 /* ==== END PORTFOLIO ==== */
 
